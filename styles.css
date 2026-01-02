@@ -16,21 +16,16 @@ body {
 }
 
 
+
 .container {
     display: flex;
-    /* justify-content: space-between; */
-    /* gap: 2px; */
-    /* min-width: 256px; */
-    /* min-height: 256px; */
-    max-width: 288px;
-    max-height: 288px;
+    max-width: 289px;
+    max-height: 289px;
     flex-wrap: wrap;
     
     
 }
 
-/* .grid {
-    display: flex;
-    flex: 1;
-    
-} */
+.touched {
+    background-color: black;
+}
