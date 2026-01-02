@@ -1,4 +1,5 @@
 const container = document.querySelector(".container")
+const btnReset = document.querySelector(".reset-button")
 
 for (let i = 0; i < 256; i++) {
    let grid = document.createElement("div")
@@ -15,3 +16,8 @@ boxes.forEach(box => {
     })
 })
 
+btnReset.addEventListener("click", () => {
+    boxes.forEach(box => {
+        box.classList.remove("touched")
+    })
+})
