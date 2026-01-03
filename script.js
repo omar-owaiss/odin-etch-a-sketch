@@ -26,5 +26,18 @@ function createGrid(num) {
     })
 }}
 
+const btnSize = document.querySelector(".size-button")
+
+btnSize.addEventListener("click", () => {
+    let newSize = prompt("Please pick a number between 1-100 for the new grid size: ", 16)
+    newSize = parseInt(newSize)
+    if (newSize >= 1 && newSize <= 100) {
+        createGrid(newSize)
+    }
+    else {
+        alert("please pick a number between 1-100")
+    }
+})
+
 
 createGrid(16)
