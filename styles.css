@@ -12,16 +12,16 @@ body {
 .grid {
     background-color: white;
     border: solid 1px black;
-    width: 16px;
-    height: 16px;
+    /* width: 16px;
+    height: 16px; */
 }
 
 
 
 .container {
     display: flex;
-    max-width: 289px;
-    max-height: 289px;
+    width: 350px;
+    height: 350px;
     flex-wrap: wrap;
     
     
@@ -30,3 +30,5 @@ body {
 .touched {
     background-color: black;
 }
+
+.container > div {  width: calc(350px / 16);  height: calc(350px / 16);  box-sizing: border-box;}
