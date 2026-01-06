@@ -15,7 +15,6 @@ function createGrid(num) {
       container.appendChild(grid)
       
 }}
-const boxes = document.querySelectorAll(".grid")
 
 container.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("grid")) {
@@ -30,6 +29,8 @@ container.addEventListener("mouseover", (e) => {
 
 
     btnReset.addEventListener("click", () => {
+        const boxes = document.querySelectorAll(".grid")
+
         boxes.forEach(box => {
             box.classList.remove("touched")
         })
