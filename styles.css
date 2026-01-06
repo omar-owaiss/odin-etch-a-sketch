@@ -11,7 +11,7 @@ body {
 
 .grid {
     background-color: white;
-    border: solid 1px black;
+    border:  solid 0.1px black;
     /* width: 16px;
     height: 16px; */
 }
@@ -23,6 +23,7 @@ body {
     width: 350px;
     height: 350px;
     flex-wrap: wrap;
+    border: solid 1px black
     
     
 }
