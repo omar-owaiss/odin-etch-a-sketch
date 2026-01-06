@@ -1,6 +1,7 @@
 const container = document.querySelector(".container")
 const btnReset = document.querySelector(".reset-button")
 const btnSize = document.querySelector(".size-button")
+const btnErase = document.querySelector(".erase-button")
 
 
 function createGrid(num) {
@@ -24,13 +25,37 @@ container.addEventListener("mouseover", (e) => {
 
 
 
-    btnReset.addEventListener("click", () => {
-        const boxes = document.querySelectorAll(".grid")
+btnReset.addEventListener("click", () => {
+    const boxes = document.querySelectorAll(".grid")
 
-        boxes.forEach(box => {
-            box.classList.remove("touched")
-        })
+    boxes.forEach(box => {
+        box.classList.remove("touched")
     })
+})
+
+//Erase button (To be worked on later)
+
+
+// btnErase.addEventListener ("click", () => {
+//     if (btnErase.textContent = "Erase") {
+//         btnErase.textContent = "Paint"
+//         container.addEventListener("mouseover", (e) => {
+//             if (e.target.classList.contains("touched")) {
+//                 e.target.classList.remove("touched")
+//             }
+//         })
+//     }
+//     if (btnErase.textContent === "Paint") {
+//         btnErase.addEventListener("click", () => {
+//             btnErase.textContent = "Erase"
+//             container.addEventListener("mouseover", (e) => {
+//                 if (e.target.classList.contains("grid")) {
+//                     e.target.classList.add("touched")
+//                 }
+//             })
+//         })
+//     }
+// })
 
 
 btnSize.addEventListener("click", () => {
