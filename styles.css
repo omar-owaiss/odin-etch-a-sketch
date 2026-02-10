@@ -17,6 +17,19 @@ button {
     border: solid 2px black;
     border-radius: 50%;
     background-color: whitesmoke;
+    box-shadow: 0 6px 3px black;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    border: solid 2px whitesmoke;
+    background-color: black;
+    color: whitesmoke;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 3px black;
 }
 
 .title {
